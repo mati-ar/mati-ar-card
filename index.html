@@ -1,11 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matías</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matias</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100dvh;
+      margin: 0;
+      background-image: url('https://i.pinimg.com/originals/bf/83/a3/bf83a390f08f57d474a569a4435f4306.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      font-family: monospace;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      max-width: 320px;
+      padding: 16px;
+      border-radius: 16px;
+      box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.5);
+      background-color: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(4px);
+      text-align: center;
+    }
+
+    img {
+      width: 224px;
+      height: 224px;
+      border-radius: 50%;
+    }
+
+    h1 {
+      font-size: 18px;
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 16px;
+      color: lightgray;
+      margin: 0;
+    }
+
+    p {
+      font-size: 14px;
+      margin: 0;
+    }
+
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .badge {
+      padding: 4px;
+      border-radius: 8px;
+      background-color: #23b5e8;
+      color: black;
+      font-weight: 700;
+      transition: box-shadow 0.25s, filter 0.25s;
+
+      &:hover {
+        box-shadow: 0 2px 4px 0 #23b5e8;
+        filter: brightness(1.25);
+      }
+    }
+
+    .link {
+      color: white;
+      font-weight: 700;
+      transition: color 0.25s;
+
+      &:hover {
+        color: #23b5e8;
+      }
+    }
+  </style>
 </head>
+
 <body>
-    Matías
+    <main>
+        <img src="https://avatars.githubusercontent.com/u/179319353?v=4" alt="Matías" width="224" height="224">
+        <h1> Matías <sup>40</sup> </h1>
+        <h2>💻 Ingeniero en Sistemas</h2>
+        <p>
+            👨‍💻 'Data %'
+        </p>
+        <p>
+            <a href="dsproject.pythonanywhere.com" class="link"><i class="bi bi-link"></i> dsproject.pythonanywhere.com</a>
+        </p>
+        <ul>
+            <li class="badge">🐍 Python 🐍</li>
+            <li class="badge">📊 Power BI 📊</li>
+            <li class="badge">🔍 SQL 🔍</li>     
+            <li class="badge">⚙️ Apache Airflow ⚙️</li>  
+
+        </ul>
+        <ul>      
+        <li>
+            <a href="https://github.com/mati-ar" class="link"><i class="bi bi-github"></i></a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/in/ing-rovere-matias/" class="link"><i class="bi bi-linkedin"></i></a>
+        </li>      
+        </ul>
+    </main>
 </body>
+
 </html>
